@@ -1,0 +1,307 @@
+.booking-confirmation {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.confirmation-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.status-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin: 0 auto 15px;
+  color: white;
+}
+
+.status-icon.status-confirmed {
+  background-color: #4caf50; /* Green */
+}
+
+.status-icon.status-pending {
+  background-color: #ff9800; /* Orange */
+}
+
+.status-icon.status-cancelled {
+  background-color: #f44336; /* Red */
+}
+
+.checkmark {
+  display: none;
+}
+
+.confirmation-header h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #333;
+}
+
+.confirmation-header p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.status-confirmed {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-pending {
+  background-color: #fff8e1;
+  color: #f57f17;
+}
+
+.status-cancelled {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.booking-details-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.booking-reference {
+  margin-bottom: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.booking-reference h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.reference-number {
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  color: #2196f3;
+}
+
+.booking-date {
+  color: #666;
+  font-size: 14px;
+}
+
+.flight-details, .passenger-details, .contact-details, .payment-details {
+  margin-bottom: 30px;
+}
+
+.flight-details h3, .passenger-details h3, .contact-details h3, .payment-details h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.flight-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.flight-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.flight-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.flight-number {
+  font-weight: bold;
+  color: #000;
+}
+
+.flight-route {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.origin, .destination {
+  text-align: center;
+  flex: 1;
+}
+
+.code {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.location {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+  font-weight: 500;
+  max-width: 130px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.time {
+  font-size: 20px;
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.date {
+  font-size: 14px;
+  color: #666;
+}
+
+.flight-arrow {
+  font-size: 24px;
+  color: #999;
+  margin: 0 15px;
+}
+
+.flight-details-row {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+  color: #666;
+  font-size: 13px;
+}
+
+.flight-seats, .flight-aircraft, .flight-cabin {
+  flex: 1;
+  text-align: center;
+}
+
+.flight-cabin {
+  font-weight: 500;
+  color: #555;
+}
+
+.passenger-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.passenger-item {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.passenger-name {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.passenger-dob {
+  color: #666;
+  font-size: 14px;
+}
+
+.contact-info, .payment-info {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.contact-email, .contact-phone {
+  margin-bottom: 8px;
+}
+
+.payment-total {
+  font-size: 18px;
+}
+
+.confirmation-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.view-bookings-button, .home-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+}
+
+.view-bookings-button {
+  background-color: #2196f3;
+  color: white;
+}
+
+.home-button {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .flight-route {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .flight-arrow {
+    transform: rotate(90deg);
+  }
+  
+  .passenger-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .passenger-dob {
+    margin-top: 5px;
+  }
+  
+  .confirmation-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
