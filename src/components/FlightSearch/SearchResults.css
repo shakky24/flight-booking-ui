@@ -30,8 +30,8 @@
 }
 
 .flight-card.selected {
-  border: 2px solid #2196f3;
-  box-shadow: 0 0 0 1px #2196f3, 0 4px 12px rgba(33, 150, 243, 0.2);
+  border: 2px solid #ff0080;
+  box-shadow: 0 0 0 1px #ff0080, 0 4px 12px rgba(33, 150, 243, 0.2);
 }
 
 .flight-header {
@@ -126,6 +126,7 @@
   border-top: 1px solid #eee;
   padding-top: 15px;
   grid-gap:1rem;
+  justify-items: center
 }
 
 .detail-label {
@@ -135,7 +136,7 @@
 .price {
   font-size: 20px;
   font-weight: bold;
-  color: #2196f3;
+  color: #ff0080;
 }
 
 .selection-indicator {
@@ -149,7 +150,7 @@
 
 .flight-card.selected .selection-indicator {
   background-color: #e3f2fd;
-  color: #2196f3;
+  color: #ff0080;
   font-weight: bold;
 }
 
@@ -199,7 +200,7 @@
 
 .summary-price {
   font-weight: bold;
-  color: #2196f3;
+  color: #ff0080;
 }
 
 .summary-total {
@@ -218,7 +219,7 @@
 .total-price {
   font-size: 24px;
   font-weight: bold;
-  color: #2196f3;
+  color: #ff0080;
 }
 
 .book-now-button {
@@ -226,7 +227,7 @@
   width: 100%;
   padding: 15px;
   margin-top: 20px;
-  background-color: #2196f3;
+  background-color: #ff0080;
   color: white;
   border: none;
   border-radius: 4px;

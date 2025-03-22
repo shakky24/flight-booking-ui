@@ -101,7 +101,7 @@
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 5px;
-  color: #2196f3;
+  color: #ff0080;
 }
 
 .booking-date {
@@ -271,7 +271,7 @@
 }
 
 .view-bookings-button {
-  background-color: #2196f3;
+  background-color: #ff0080;
   color: white;
 }
 

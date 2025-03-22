@@ -47,9 +47,9 @@ const SearchResults: React.FC<SearchResultsProps> = ({
 
   // Format price (e.g., "$240.50")
   const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('en-US', {
+    return new Intl.NumberFormat('en-IN', {
       style: 'currency',
-      currency: 'USD',
+      currency: 'INR',
       minimumFractionDigits: 2
     }).format(price);
   };
@@ -116,7 +116,6 @@ const SearchResults: React.FC<SearchResultsProps> = ({
           
           <div className="flight-duration">
             <div className="duration-line"></div>
-            <div className="duration-time">{formatDuration(flight.duration)}</div>
           </div>
           
           <div className="destination">

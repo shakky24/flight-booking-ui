@@ -3,8 +3,12 @@ import Login from './Login';
 import Register from './Register';
 import './Auth.css';
 
-const Auth: React.FC = () => {
-  const [isLogin, setIsLogin] = useState(true);
+interface AuthProps {
+  isSignUp?: boolean;
+}
+
+const Auth: React.FC<AuthProps> = ({ isSignUp = false }) => {
+  const [isLogin, setIsLogin] = useState(!isSignUp);
 
   const toggleForm = () => {
     setIsLogin(!isLogin);
@@ -26,12 +30,13 @@ const Auth: React.FC = () => {
           Sign Up
         </button>
       </div>
-      
-      {isLogin ? (
-        <Login onToggleForm={toggleForm} />
-      ) : (
-        <Register onToggleForm={toggleForm} />
-      )}
+      <div className="auth-content">
+        {isLogin ? (
+          <Login onToggleForm={toggleForm} />
+        ) : (
+          <Register onToggleForm={toggleForm} />
+        )}
+      </div>
     </div>
   );
 };
