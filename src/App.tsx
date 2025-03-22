@@ -76,7 +76,7 @@ const MainContent: React.FC = () => {
             </ProtectedRoute>
           } />
           
-          <Route path="/booking/confirmation" element={
+          <Route path="/booking-confirmation" element={
             <ProtectedRoute>
               <BookingConfirmation />
             </ProtectedRoute>
