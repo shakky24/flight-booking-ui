@@ -1,7 +1,7 @@
 import { Airport, SearchFlightRequest, SearchFlightResponse, Booking, BookingRequest } from '../types';
 
 // Use environment variable with fallback to localhost:8000
-export const API_URL = 'http://localhost:9000';
+export const API_URL = 'https://flight-booking-nestjs.vercel.app';
 
 // Helper to get JWT token from localStorage
 const getAuthToken = (): string | null => {
