@@ -126,7 +126,6 @@ const SearchResults: React.FC<SearchResultsProps> = ({
         </div>
         
         <div className="flight-details">
-          <div className="seats">{flight.availableSeats} seats</div>
           <div className="aircraft">{flight.aircraft}</div>
           <div className="price">{formatPrice(flight.price)}</div>
         </div>

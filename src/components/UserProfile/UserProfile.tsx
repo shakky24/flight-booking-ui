@@ -61,12 +61,26 @@ const UserProfile: React.FC<Props> = () => {
     }
   };
 
-  // Helper to safely get flight data from various booking structures
+  // Helper to safely get flight details from various booking data structures
   const getFlightDetails = (booking: any) => {
     // Debug to see what data structure we have
     console.log("Processing booking data:", booking);
     
-    // Create a default empty flight object
+    // Check if we have outbound_flight with the proper structure from API
+    if (booking.outbound_flight) {
+      return {
+        flightNumber: booking.outbound_flight.flight_number || `FL${booking.id?.substring(0, 4) || "0000"}`,
+        origin: {
+          code: booking.outbound_flight.origin?.code || 'DEP'
+        },
+        destination: {
+          code: booking.outbound_flight.destination?.code || 'ARR'
+        },
+        departureTime: booking.outbound_flight.departure_time || booking.booking_date || new Date().toISOString()
+      };
+    }
+    
+    // Create a default empty flight object - legacy code path
     let flightData: any = {
       flightNumber: '',
       origin: { code: '' },
@@ -195,7 +209,7 @@ const UserProfile: React.FC<Props> = () => {
                     className="booking-details-button"
                     onClick={() => {
                       // Navigate to booking confirmation page with the booking details
-                      navigate('/booking/confirmation', { 
+                      navigate('/booking-confirmation', { 
                         state: { booking: booking }
                       });
                     }}

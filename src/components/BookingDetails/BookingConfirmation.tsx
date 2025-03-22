@@ -369,7 +369,6 @@ const BookingConfirmation: React.FC<BookingConfirmationProps> = () => {
             </div>
             
             <div className="flight-details-row">
-              <div className="flight-seats">{outboundFlight.availableSeats || ""} seats</div>
               <div className="flight-aircraft">{outboundFlight.aircraft || ""}</div>
               <div className="flight-cabin">{outboundFlight.cabinClass || ""}</div>
             </div>
@@ -401,7 +400,6 @@ const BookingConfirmation: React.FC<BookingConfirmationProps> = () => {
               </div>
               
               <div className="flight-details-row">
-                <div className="flight-seats">{returnFlight.availableSeats || ""} seats</div>
                 <div className="flight-aircraft">{returnFlight.aircraft || ""}</div>
                 <div className="flight-cabin">{returnFlight.cabinClass || ""}</div>
               </div>
