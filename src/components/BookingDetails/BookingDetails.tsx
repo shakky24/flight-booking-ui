@@ -384,13 +384,13 @@ const BookingDetails: React.FC<BookingDetailsProps> = () => {
         <div className="price-summary">
           <div className="price-detail">
             <span>Outbound Flight:</span>
-            <span>${outboundFlight.price}</span>
+            <span>₹{outboundFlight.price}</span>
           </div>
           
           {returnFlight && (
             <div className="price-detail">
               <span>Return Flight:</span>
-              <span>${returnFlight.price}</span>
+              <span>₹{returnFlight.price}</span>
             </div>
           )}
           

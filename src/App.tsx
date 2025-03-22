@@ -59,6 +59,8 @@ const MainContent: React.FC = () => {
         <Routes>
           <Route path="/login" element={<Auth />} />
           <Route path="/signup" element={<Auth isSignUp />} />
+
+          <Route path="/booking-details" element={<BookingDetails />} />
           
           <Route path="/" element={<FlightSearch />} />
           
