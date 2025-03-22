@@ -16,7 +16,7 @@ const AirportSelect: React.FC<AirportSelectProps> = ({
   airports = [], 
   value, 
   onChange,
-  placeholder = "Search for airport, city or country", 
+  placeholder = "", 
   isLoading = false 
 }) => {
   const [query, setQuery] = useState('');

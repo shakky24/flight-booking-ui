@@ -137,7 +137,6 @@ const FlightSearch: React.FC = () => {
               airports={airports}
               value={origin}
               onChange={setOrigin}
-              placeholder="Select origin"
               isLoading={isLoadingAirports}
             />
           </div>
@@ -149,7 +148,6 @@ const FlightSearch: React.FC = () => {
               airports={airports}
               value={destination}
               onChange={setDestination}
-              placeholder="Select destination"
               isLoading={isLoadingAirports}
             />
           </div>
